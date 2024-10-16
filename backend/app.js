@@ -1,8 +1,9 @@
 // Import modules
 const express = require("express");
+require('dotenv').config();
 const connectDb = require("./config/db");
 const cors = require('cors');
-require('dotenv').config();
+const exerciseRoutes = require('./routes/exerciseRoutes.js');
 
 // start app
 const app = express();
@@ -15,6 +16,7 @@ app.use(cors({
 connectDb();
 
 // call routers
+app.use('/api/exercises', exerciseRoutes);
 app.get("/", (req, res) => {
     res.send("Exo Master")
 });
