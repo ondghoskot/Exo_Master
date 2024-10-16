@@ -3,10 +3,11 @@ const axios = require("axios");
 // ExerciseDB API base URL and headers
 const EXERCISE_DB_URL = 'https://exercisedb.p.rapidapi.com/exercises';
 const EXERCISE_DB_API_KEY = process.env.X_RAPIDAPI_KEY;
+const EXERCISE_DB_API_HOST = process.env.X_RAPIDAPI_HOST;
 
 const axiosInstance = axios.create({
   headers: {
-    'x-rapidapi-host': 'exercisedb.p.rapidapi.com',
+    'x-rapidapi-host': EXERCISE_DB_API_HOST,
     'x-rapidapi-key': EXERCISE_DB_API_KEY,
   },
 });
@@ -26,7 +27,7 @@ exports.getExercisesByBodyPart = async (req, res) => {
   const { bodyPart } = req.params;
 
   try {
-      const response = await axiosInstance.get(`/${bodyPart}`);
+      const response = await axiosInstance.get(`${EXERCISE_DB_URL}/${bodyPart}`);
       res.json(response.data);
   } catch (error) {
       console.error('Error fetching exercises:', error);
