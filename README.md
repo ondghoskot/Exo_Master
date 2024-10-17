@@ -26,7 +26,7 @@
 1. Clone the repository:
 ```bash
    git clone https://github.com/yourusername/exomaster.git
-````
+```
 2. Navigate to the project directory:
 ```bash
 cd exomaster
@@ -38,9 +38,9 @@ npm install
 4. Start the development server:
 ```bash
 npm run dev
-````
-The app will be running on http://localhost:3000.
 ```
+The app will be running on http://localhost:3000.
+
 ## Project Structure
 - /assets: Static assets like images and logos.
 - /components: Vue.js components such as the header, body diagram, and search.
@@ -55,7 +55,7 @@ The app will be running on http://localhost:3000.
 2. Provide a form for users to fill for more specified fitness recommendations
 3. Add the possibilty to send exercises to your email for efficiency and security concerns in public gyms
 
-## contributing
+## Contributing
 Contributions are welcome to Exo Master! To contribute:
 
 1. Fork the repository.
