@@ -1,11 +1,12 @@
-## Exo Master
-# Alx Final Project
+# Exo Master
+## Alx Final Project
 
 ## Overview
 **Exo Master** is a dynamic web-based frontend platform designed to help users visualize and learn exercises targeting specific muscle groups. The idea is for Exo Master to be the ultimate platform, existing on a screen in every gym to help beginners and even pros choose their exercices. The site highlights body anatomy and provides a list of recommended exercises for each muscle group, offering a clear and intuitive way to train the body effectively. this project was made by Anass Chtioui for alx graduation project.
 
-![Exo Master Logo](./frontend/assets/logo.png)
-
+<div align="center">
+  <img src="./frontend/assets/logo.png" alt="Exo Master Logo" width="200"/>
+</div>
 
 ## Features
 - **Muscle Group Visualization**: The platform uses an anatomical diagram to showcase specific muscle groups. When a user clicks on a muscle group, the related muscles are highlighted.
