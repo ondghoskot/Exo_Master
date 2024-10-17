@@ -1,17 +1,26 @@
 {
-  "name": "nuxt-app",
+  "name": "exomaster",
+  "version": "1.0.0",
+  "author":"Anass Chtioui",
   "private": true,
-  "type": "module",
   "scripts": {
+    "dev": "nuxt",
     "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^3.13.0",
-    "vue": "latest",
-    "vue-router": "latest"
+    "@nuxtjs/auth": "^4.9.1",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/dotenv": "^1.4.2",
+    "@nuxtjs/style-resources": "^1.2.2",
+    "cookie-universal-nuxt": "^2.2.2",
+    "core-js": "^3.6.5",
+    "hooper": "^0.3.4",
+    "nuxt": "^2.14.5",
+    "sass": "^1.77.6",
+    "sass-loader": "^10.4.1",
+    "v-click-outside": "^3.2.0",
+    "webpack": "^4.47.0"
   }
 }
